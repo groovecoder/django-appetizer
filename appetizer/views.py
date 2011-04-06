@@ -1,4 +1,8 @@
+from django.conf import settings
+from django.contrib.sites.models import Site, get_current_site
 from django.shortcuts import render_to_response
 
 def manifest(request, template='appetizer/manifest.json'):
-    return render_to_response(template, mimetype='application/x-web-app-manifest+json')
+    current_site = get_current_site()
+    site_name = current_site.name
+    return render_to_response(template, locals(), mimetype='application/x-web-app-manifest+json')

@@ -1,6 +1,6 @@
 {
  "version": "1.0",
- "name": "Appetizer",
+ "name": "{{ site_name }}",
  "description": "Automatically creates Open Web Application manifests for django sites. https://apps.mozillalabs.com/"
  "icons": {},
  "widget": {},
