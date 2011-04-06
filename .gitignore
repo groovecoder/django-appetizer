@@ -1,0 +1,6 @@
+*.pyc
+.DS_Store
+
+django_appetizer.egg-info
+build/
+dist/
